@@ -15,14 +15,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          tools: composer
+
+      - name: Install Satis
+        run: composer global require composer/satis --no-interaction
+
       - name: Build Satis
-        run: |
-          docker run --rm \
-            -v $(pwd):/build \
-            -e SATIS_GITHUB_TOKEN=${{ secrets.SATIS_GITHUB_TOKEN }} \
-            --entrypoint sh \
-            composer/satis \
-            -c "git config --global --add safe.directory /build && satis build /build/satis.json /build/public --no-interaction"
+        env:
+          COMPOSER_AUTH: '{"github-oauth":{"github.com":"${{ secrets.SATIS_GITHUB_TOKEN }}"}}'
+        run: ~/.composer/vendor/bin/satis build satis.json public --no-interaction
 
       - name: Deploy para GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
