@@ -1,0 +1,205 @@
+{
+    "packages": {
+        "wintersmgc/ws-plugin-banner": [
+            {
+                "name": "wintersmgc/ws-plugin-banner",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-plugin-banner.git",
+                    "reference": "593a03a2c0323e74769cb95c6a7257e22e492ad7"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/wintersmgc/ws-plugin-banner/wintersmgc-ws-plugin-banner-593a03a2c0323e74769cb95c6a7257e22e492ad7-zip-c058b8.zip",
+                    "reference": "593a03a2c0323e74769cb95c6a7257e22e492ad7",
+                    "shasum": "05e9ca70964a92ae4d78106b579decc5d968843a"
+                },
+                "require": {
+                    "composer/installers": "~1.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-02-12T02:46:57+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "banner"
+                },
+                "installation-source": "dist",
+                "description": "Plugin de Banners WinterSmgc",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-plugin-banner/tree/v1.0.0",
+                    "issues": "https://github.com/Winter-SMGC/ws-plugin-banner/issues"
+                }
+            },
+            {
+                "name": "wintersmgc/ws-plugin-banner",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-plugin-banner.git",
+                    "reference": "0a7dc7c25794464295551d0912391cabdf0e649a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/wintersmgc/ws-plugin-banner/wintersmgc-ws-plugin-banner-0a7dc7c25794464295551d0912391cabdf0e649a-zip-f1b5c8.zip",
+                    "reference": "0a7dc7c25794464295551d0912391cabdf0e649a",
+                    "shasum": "3542c330326339655571c51ea39c97c3af141b82"
+                },
+                "require": {
+                    "composer/installers": "~1.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-02-12T03:17:41+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "banner"
+                },
+                "installation-source": "dist",
+                "description": "Plugin de Banners WinterSmgc",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-plugin-banner/tree/v1.0.1",
+                    "issues": "https://github.com/Winter-SMGC/ws-plugin-banner/issues"
+                }
+            },
+            {
+                "name": "wintersmgc/ws-plugin-banner",
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-plugin-banner.git",
+                    "reference": "92dee9bee259d7c0aa86bb2f91cc04d968f06f6f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/wintersmgc/ws-plugin-banner/wintersmgc-ws-plugin-banner-92dee9bee259d7c0aa86bb2f91cc04d968f06f6f-zip-c9be8e.zip",
+                    "reference": "92dee9bee259d7c0aa86bb2f91cc04d968f06f6f",
+                    "shasum": "ccc006ad693ca5bdcbe7bb021a0bddb28fe17cce"
+                },
+                "require": {
+                    "composer/installers": "~1.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-02-12T03:22:15+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "banner"
+                },
+                "installation-source": "dist",
+                "description": "Plugin de Banners WinterSmgc",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-plugin-banner/tree/v1.0.2",
+                    "issues": "https://github.com/Winter-SMGC/ws-plugin-banner/issues"
+                }
+            },
+            {
+                "name": "wintersmgc/ws-plugin-banner",
+                "version": "v1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-plugin-banner.git",
+                    "reference": "0b1710662b3ce741c8b939a442dcb5ee76d1c444"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/wintersmgc/ws-plugin-banner/wintersmgc-ws-plugin-banner-0b1710662b3ce741c8b939a442dcb5ee76d1c444-zip-9a43e5.zip",
+                    "reference": "0b1710662b3ce741c8b939a442dcb5ee76d1c444",
+                    "shasum": "b2454690df9a743d98332f47c9a5a01ccdb7b0a0"
+                },
+                "require": {
+                    "composer/installers": "~1.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-02-12T03:37:58+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "banners"
+                },
+                "installation-source": "dist",
+                "description": "Plugin de Banners WinterSmgc",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-plugin-banner/tree/v1.0.3",
+                    "issues": "https://github.com/Winter-SMGC/ws-plugin-banner/issues"
+                }
+            },
+            {
+                "name": "wintersmgc/ws-plugin-banner",
+                "version": "v1.0.4",
+                "version_normalized": "1.0.4.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-plugin-banner.git",
+                    "reference": "9ec4dd63d9fec3227830fc16d259a456839b10d3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/wintersmgc/ws-plugin-banner/wintersmgc-ws-plugin-banner-9ec4dd63d9fec3227830fc16d259a456839b10d3-zip-6e9cbc.zip",
+                    "reference": "9ec4dd63d9fec3227830fc16d259a456839b10d3",
+                    "shasum": "289e100d0d0f5a02a936c3007501ef5b90f09e52"
+                },
+                "require": {
+                    "composer/installers": "^2.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-03-15T01:32:32+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "banners"
+                },
+                "authors": [
+                    {
+                        "name": "Masterix",
+                        "email": "suporte@masterix.com.br"
+                    }
+                ],
+                "description": "Plugin de Banners WinterSmgc",
+                "homepage": "https://masterix.com.br",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-plugin-banner/tree/v1.0.5",
+                    "issues": "https://github.com/Winter-SMGC/ws-plugin-banner/issues"
+                }
+            },
+            {
+                "name": "wintersmgc/ws-plugin-banner",
+                "version": "v1.0.5",
+                "version_normalized": "1.0.5.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-plugin-banner.git",
+                    "reference": "9ec4dd63d9fec3227830fc16d259a456839b10d3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/wintersmgc/ws-plugin-banner/wintersmgc-ws-plugin-banner-9ec4dd63d9fec3227830fc16d259a456839b10d3-zip-6e9cbc.zip",
+                    "reference": "9ec4dd63d9fec3227830fc16d259a456839b10d3",
+                    "shasum": "289e100d0d0f5a02a936c3007501ef5b90f09e52"
+                },
+                "require": {
+                    "composer/installers": "^2.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-03-15T01:32:32+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "banners"
+                },
+                "installation-source": "dist",
+                "authors": [
+                    {
+                        "name": "Masterix",
+                        "email": "suporte@masterix.com.br"
+                    }
+                ],
+                "description": "Plugin de Banners WinterSmgc",
+                "homepage": "https://masterix.com.br",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-plugin-banner/tree/v1.0.5",
+                    "issues": "https://github.com/Winter-SMGC/ws-plugin-banner/issues"
+                }
+            }
+        ]
+    }
+}

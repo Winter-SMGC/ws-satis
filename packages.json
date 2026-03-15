@@ -1,0 +1,12 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$6f548cb3b7f5f2d9d82ffec35344bfb743c2a954.json": {
+            "sha1": "6f548cb3b7f5f2d9d82ffec35344bfb743c2a954"
+        }
+    },
+    "metadata-url": "/ws-satis/p2/%package%.json",
+    "available-packages": [
+        "wintersmgc/ws-plugin-banner"
+    ]
+}
