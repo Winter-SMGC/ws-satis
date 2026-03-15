@@ -8,6 +8,5 @@
     "format": "zip",
     "skip-dev": true
   },
-  "twig-template": null,
   "output-html": false
 }
