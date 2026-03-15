@@ -1,7 +1,12 @@
 {
   "name": "winter-smgc/registry",
   "homepage": "https://winter-smgc.github.io/ws-satis",
-  "repositories": [],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Winter-SMGC/ws-plugin-banner"
+    }
+  ],
   "require-all": true,
   "archive": {
     "directory": "dist",
