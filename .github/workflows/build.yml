@@ -20,8 +20,9 @@ jobs:
           docker run --rm \
             -v $(pwd):/build \
             -e SATIS_GITHUB_TOKEN=${{ secrets.SATIS_GITHUB_TOKEN }} \
-            composer/satis build /build/satis.json /build/public \
-            --no-interaction
+            --entrypoint sh \
+            composer/satis \
+            -c "git config --global --add safe.directory /build && satis build /build/satis.json /build/public --no-interaction"
 
       - name: Deploy para GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
