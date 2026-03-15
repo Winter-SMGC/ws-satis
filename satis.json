@@ -1,0 +1,13 @@
+{
+  "name": "winter-smgc/registry",
+  "homepage": "https://winter-smgc.github.io/ws-satis",
+  "repositories": [],
+  "require-all": true,
+  "archive": {
+    "directory": "dist",
+    "format": "zip",
+    "skip-dev": true
+  },
+  "twig-template": null,
+  "output-html": false
+}

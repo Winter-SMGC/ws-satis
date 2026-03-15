@@ -1,0 +1,31 @@
+name: Build Satis
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [rebuild]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Satis
+        run: |
+          docker run --rm \
+            -v $(pwd):/build \
+            -e SATIS_GITHUB_TOKEN=${{ secrets.SATIS_GITHUB_TOKEN }} \
+            composer/satis build /build/satis.json /build/public \
+            --no-interaction
+
+      - name: Deploy para GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          force_orphan: true
