@@ -22,12 +22,16 @@ jobs:
           tools: composer
 
       - name: Install Satis
-        run: composer global require composer/satis --no-interaction
+        run: |
+          composer create-project composer/satis:dev-main satis-tool \
+            --no-interaction \
+            --no-progress \
+            --stability=dev
 
       - name: Build Satis
         env:
           COMPOSER_AUTH: '{"github-oauth":{"github.com":"${{ secrets.SATIS_GITHUB_TOKEN }}"}}'
-        run: ~/.composer/vendor/bin/satis build satis.json public --no-interaction
+        run: php satis-tool/bin/satis build satis.json public --no-interaction
 
       - name: Deploy para GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
