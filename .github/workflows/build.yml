@@ -18,15 +18,14 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: "8.2"
+          php-version: "8.3"
           tools: composer
 
       - name: Install Satis
         run: |
-          composer create-project composer/satis:dev-main satis-tool \
+          composer create-project --keep-vcs --no-dev composer/satis:dev-main satis-tool \
             --no-interaction \
-            --no-progress \
-            --stability=dev
+            --no-progress
 
       - name: Build Satis
         env:
