@@ -5,6 +5,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/Winter-SMGC/ws-plugin-banner"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Winter-SMGC/ws-core-plugin"
     }
   ],
   "require-all": true,
