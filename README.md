@@ -1,17 +1,17 @@
 # ws-satis
 
-A private [Satis](https://github.com/composer/satis) Composer package registry for the Winter-SMGC organization. It automatically builds and publishes PHP packages to GitHub Pages on demand.
+Um registro privado de pacotes Composer baseado em [Satis](https://github.com/composer/satis) para a organização Winter-SMGC. Ele automaticamente constrói e publica pacotes PHP no GitHub Pages sob demanda.
 
-**Registry URL:** https://winter-smgc.github.io/ws-satis
+**URL do Registro:** https://winter-smgc.github.io/ws-satis
 
-## Requirements
+## Requisitos
 
 - PHP 8.4+
 - [Composer](https://getcomposer.org/)
 
-## Usage
+## Uso
 
-Add the registry to your project's `composer.json`:
+Adicione o registro ao `composer.json` do seu projeto:
 
 ```json
 {
@@ -24,32 +24,32 @@ Add the registry to your project's `composer.json`:
 }
 ```
 
-Then require a package as usual:
+Em seguida, instale um pacote normalmente:
 
 ```bash
-composer require winter-smgc/<package-name>
+composer require winter-smgc/<nome-do-pacote>
 ```
 
-## Adding a New Package
+## Adicionando um Novo Pacote
 
-1. Add a new entry to the `repositories` array in `satis.json`:
+1. Adicione uma nova entrada ao array `repositories` no `satis.json`:
 
 ```json
 {
   "type": "vcs",
-  "url": "https://github.com/Winter-SMGC/<repository-name>"
+  "url": "https://github.com/Winter-SMGC/<nome-do-repositorio>"
 }
 ```
 
-2. Commit and push the change.
-3. Trigger a rebuild via the GitHub Actions workflow (see [Building the Registry](#building-the-registry)).
+2. Faça o commit e envie a alteração.
+3. Acione uma reconstrução pelo workflow do GitHub Actions (veja [Construindo o Registro](#construindo-o-registro)).
 
-## Building the Registry
+## Construindo o Registro
 
-The registry is built automatically by the GitHub Actions workflow defined in `.github/workflows/build.yml`. It can be triggered in two ways:
+O registro é construído automaticamente pelo workflow do GitHub Actions definido em `.github/workflows/build.yml`. Ele pode ser acionado de duas formas:
 
-- **Manually** — via the *Run workflow* button in the GitHub Actions UI.
-- **Via API** — send a `repository_dispatch` event with event type `rebuild`:
+- **Manualmente** — pelo botão *Run workflow* na interface do GitHub Actions.
+- **Via API** — envie um evento `repository_dispatch` com o tipo `rebuild`:
 
 ```bash
 curl -X POST \
@@ -59,48 +59,48 @@ curl -X POST \
   -d '{"event_type":"rebuild"}'
 ```
 
-### Build Steps
+### Etapas da Construção
 
-1. Checks out the repository.
-2. Sets up PHP 8.4 with Composer.
-3. Installs Satis (`composer/satis:dev-main`).
-4. Runs `php satis-tool/bin/satis build satis.json public --no-interaction`.
-5. Deploys the generated `public/` directory to GitHub Pages.
+1. Faz o checkout do repositório.
+2. Configura o PHP 8.4 com o Composer.
+3. Instala o Satis (`composer/satis:dev-main`).
+4. Executa `php satis-tool/bin/satis build satis.json public --no-interaction`.
+5. Publica o diretório `public/` gerado no GitHub Pages.
 
-## Local Build
+## Construção Local
 
 ```bash
-# Install Satis
+# Instalar o Satis
 composer create-project --keep-vcs --no-dev composer/satis:dev-main satis-tool \
   --no-interaction \
   --no-progress
 
-# Build the registry
+# Construir o registro
 php satis-tool/bin/satis build satis.json public --no-interaction
 ```
 
-The generated repository will be available in the `public/` directory.
+O repositório gerado estará disponível no diretório `public/`.
 
-## Configuration
+## Configuração
 
-All repository and archive settings are defined in `satis.json`:
+Todas as configurações de repositório e arquivo são definidas no `satis.json`:
 
-| Field | Value | Description |
-|-------|-------|-------------|
-| `name` | `winter-smgc/registry` | Registry identifier |
-| `homepage` | https://winter-smgc.github.io/ws-satis | Public URL |
-| `require-all` | `true` | Index all versions of every listed package |
-| `archive.directory` | `dist` | Where ZIP archives are stored |
-| `archive.format` | `zip` | Archive format |
-| `archive.skip-dev` | `true` | Exclude dev dependencies from archives |
-| `output-html` | `false` | Disable HTML page generation |
+| Campo | Valor | Descrição |
+|-------|-------|-----------|
+| `name` | `winter-smgc/registry` | Identificador do registro |
+| `homepage` | https://winter-smgc.github.io/ws-satis | URL pública |
+| `require-all` | `true` | Indexa todas as versões de cada pacote listado |
+| `archive.directory` | `dist` | Onde os arquivos ZIP são armazenados |
+| `archive.format` | `zip` | Formato do arquivo |
+| `archive.skip-dev` | `true` | Exclui dependências de desenvolvimento dos arquivos |
+| `output-html` | `false` | Desativa a geração de página HTML |
 
-## Packages
+## Pacotes
 
-| Package | Source |
-|---------|--------|
+| Pacote | Fonte |
+|--------|-------|
 | `ws-plugin-banner` | https://github.com/Winter-SMGC/ws-plugin-banner |
 
-## License
+## Licença
 
-See individual packages for their respective licenses.
+Consulte os pacotes individuais para suas respectivas licenças.
