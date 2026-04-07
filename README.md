@@ -11,20 +11,20 @@ Um registro privado de pacotes Composer baseado em [Satis](https://github.com/co
 
 ## Uso
 
-Adicione o registro ao `composer.json` do seu projeto:
+O registro já está configurado no `composer.json` do repositório principal da organização:
 
 ```json
 {
   "repositories": [
     {
       "type": "composer",
-      "url": "https://winter-smgc.github.io/ws-satis"
+      "url": "https://winter-smgc.github.io/ws-satis/packages.json"
     }
   ]
 }
 ```
 
-Em seguida, instale um pacote normalmente:
+Ao iniciar um projeto a partir do repositório principal, essa configuração já estará incluída. Para instalar um pacote:
 
 ```bash
 composer require winter-smgc/<nome-do-pacote>
@@ -89,6 +89,9 @@ Todas as configurações de repositório e arquivo são definidas no `satis.json
 |-------|-------|-----------|
 | `name` | `winter-smgc/registry` | Identificador do registro |
 | `homepage` | https://winter-smgc.github.io/ws-satis | URL pública |
+| `repositories` | array de objetos `{ type, url }` | Lista de repositórios VCS a indexar |
+| `repositories[].type` | `"vcs"` | Tipo de fonte (sistema de controle de versão) |
+| `repositories[].url` | URL do GitHub | Endereço do repositório do pacote |
 | `require-all` | `true` | Indexa todas as versões de cada pacote listado |
 | `archive.directory` | `dist` | Onde os arquivos ZIP são armazenados |
 | `archive.format` | `zip` | Formato do arquivo |
@@ -99,7 +102,8 @@ Todas as configurações de repositório e arquivo são definidas no `satis.json
 
 | Pacote | Fonte |
 |--------|-------|
-| `ws-plugin-banner` | https://github.com/Winter-SMGC/ws-plugin-banner |
+| `winter-smgc/ws-plugin-banner` | https://github.com/Winter-SMGC/ws-plugin-banner |
+| `winter-smgc/ws-core-plugin` | https://github.com/Winter-SMGC/ws-core-plugin |
 
 ## Licença
 
