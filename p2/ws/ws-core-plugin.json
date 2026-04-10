@@ -1,0 +1,154 @@
+{
+    "packages": {
+        "ws/ws-core-plugin": [
+            {
+                "name": "ws/ws-core-plugin",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-core-plugin.git",
+                    "reference": "d98e248a6d78a9ddad0e80958552f440dca5de50"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/ws/ws-core-plugin/ws-ws-core-plugin-d98e248a6d78a9ddad0e80958552f440dca5de50-zip-5dd02e.zip",
+                    "reference": "d98e248a6d78a9ddad0e80958552f440dca5de50",
+                    "shasum": "c3b887f9b84388ec709069ce6369c144d63934c1"
+                },
+                "require": {
+                    "composer/installers": "^2.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-04-07T14:07:07+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "core"
+                },
+                "installation-source": "dist",
+                "authors": [
+                    {
+                        "name": "Winter SMGC",
+                        "email": "suporte@masterix.com.br"
+                    }
+                ],
+                "description": "Plugin responsável por adicionar as funcionalidades essenciais que todo projeto precisa, independentemente dos temas ou plugins opcionais instalados",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-core-plugin/tree/v1.0.0",
+                    "issues": "https://github.com/Winter-SMGC/ws-core-plugin/issues"
+                }
+            },
+            {
+                "name": "ws/ws-core-plugin",
+                "version": "v1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-core-plugin.git",
+                    "reference": "21f0209b985abe2faca07e36d2b567395aeee1b8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/ws/ws-core-plugin/ws-ws-core-plugin-21f0209b985abe2faca07e36d2b567395aeee1b8-zip-690a4b.zip",
+                    "reference": "21f0209b985abe2faca07e36d2b567395aeee1b8",
+                    "shasum": "cd3814cb73dab6baee2e064ca622a6b0273e87e5"
+                },
+                "require": {
+                    "composer/installers": "^1.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-04-07T17:40:47+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "core"
+                },
+                "installation-source": "dist",
+                "authors": [
+                    {
+                        "name": "Winter SMGC",
+                        "email": "suporte@masterix.com.br"
+                    }
+                ],
+                "description": "Plugin responsável por adicionar as funcionalidades essenciais que todo projeto precisa, independentemente dos temas ou plugins opcionais instalados",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-core-plugin/tree/v1.1.0",
+                    "issues": "https://github.com/Winter-SMGC/ws-core-plugin/issues"
+                }
+            },
+            {
+                "name": "ws/ws-core-plugin",
+                "version": "v1.1.1",
+                "version_normalized": "1.1.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-core-plugin.git",
+                    "reference": "245b1ffdce2f4d170e5b8c931df00e0ee7d357cf"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/ws/ws-core-plugin/ws-ws-core-plugin-245b1ffdce2f4d170e5b8c931df00e0ee7d357cf-zip-e03012.zip",
+                    "reference": "245b1ffdce2f4d170e5b8c931df00e0ee7d357cf",
+                    "shasum": "8044b03d63427724d02694ba324accd2bb10c96b"
+                },
+                "require": {
+                    "composer/installers": "^1.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-04-07T18:02:17+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "core"
+                },
+                "installation-source": "dist",
+                "authors": [
+                    {
+                        "name": "Winter SMGC",
+                        "email": "suporte@masterix.com.br"
+                    }
+                ],
+                "description": "Plugin responsável por adicionar as funcionalidades essenciais que todo projeto precisa, independentemente dos temas ou plugins opcionais instalados",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-core-plugin/tree/v1.1.1",
+                    "issues": "https://github.com/Winter-SMGC/ws-core-plugin/issues"
+                }
+            },
+            {
+                "name": "ws/ws-core-plugin",
+                "version": "v1.1.2",
+                "version_normalized": "1.1.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:Winter-SMGC/ws-core-plugin.git",
+                    "reference": "0d12d33209f24356373d9b9a8f351c17d9e4baa2"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://winter-smgc.github.io/ws-satis/dist/ws/ws-core-plugin/ws-ws-core-plugin-0d12d33209f24356373d9b9a8f351c17d9e4baa2-zip-151740.zip",
+                    "reference": "0d12d33209f24356373d9b9a8f351c17d9e4baa2",
+                    "shasum": "408ce26830ee3db0f874f2d73c5b00800d269b62"
+                },
+                "require": {
+                    "composer/installers": "^1.0",
+                    "php": ">=8.1"
+                },
+                "time": "2026-04-10T02:17:31+00:00",
+                "type": "winter-plugin",
+                "extra": {
+                    "installer-name": "core"
+                },
+                "installation-source": "dist",
+                "authors": [
+                    {
+                        "name": "Winter SMGC",
+                        "email": "suporte@masterix.com.br"
+                    }
+                ],
+                "description": "Plugin responsável por adicionar as funcionalidades essenciais que todo projeto precisa, independentemente dos temas ou plugins opcionais instalados",
+                "support": {
+                    "source": "https://github.com/Winter-SMGC/ws-core-plugin/tree/v1.1.2",
+                    "issues": "https://github.com/Winter-SMGC/ws-core-plugin/issues"
+                }
+            }
+        ]
+    }
+}
